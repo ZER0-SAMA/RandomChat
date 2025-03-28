@@ -1,0 +1,241 @@
+#root {
+  /* max-width: 1280px; */
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin:  auto;
+  padding: 2rem;
+  text-align: center;
+  /* border:1px solid white; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+ 
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.username-box{
+width: 100%;
+height: 100%; 
+  width: 400px;
+  height: 550px;
+  background: rgba(237, 229, 229, 0.27);
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: auto;
+  /* padding: 10px; */
+}
+#username-btn{
+  color:white;
+  margin-top:5px;
+  background-color: red;
+  width: 250px;
+  height: 40px;
+  background: #000000;
+  border-radius: 1000px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+#username-inpt-box{
+  width:100%;
+  padding: 0%;
+  margin: 0%;
+  margin-top:2px;
+  outline-style: none;
+  width: 240px;
+  height: 30px;
+  background: rgba(132, 132, 132, 0.67);
+  border-radius: 1000px;
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  color:black;
+  text-align: center;
+  font-size: medium;
+  
+}
+#username-inpt-box::placeholder {
+  color: darkgray;
+  font-size: medium;
+  text-align: center;
+}
+.username-inner-box{
+
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+width: 100%;
+padding: 5px;
+}
+.main-box{
+  /* border:1px solid red;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+                                 
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .main-box {
+    flex-direction: column;
+  }
+}
+.video-box{
+  background-color: white;
+  /* height:420px;    */
+  width: 500px;
+  /* width:"3000px"; */
+
+margin: 10px;
+/* border: 2px solid blue; */
+border-radius: 20px;
+overflow: hidden;
+
+}
+.video-screen{
+border-radius:20px 20px 0px 0px;
+height:420px;   
+width: 100%;
+ height:fit-content;
+ overflow: hidden;
+  /* border: 2px solid white; */
+}
+.video-controls{
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+
+}
+.main-video-area{
+  
+ 
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.main-chat-area{  
+  width: 470px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 12px;
+ }
+.chat-box{
+  width: 100%;
+  height: 100%;
+  background:whitesmoke;  border-radius: 12px 12px 0px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  color:black;
+  font-size: large;
+  overflow-y: auto;
+ 
+}
+.msg-send-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 10px;
+  
+}
+textarea {
+  resize: none;
+}
+.msg-style-my{
+
+  background-color: #888;
+  color:white;
+ width:fit-content;
+ max-width: 80%;
+  overflow-wrap: normal;
+  padding: 5px;
+  border-radius: 10px;
+  float: right;
+  margin: 2px;
+}
+.msg-style-friend{
+  max-width: 80%;
+  background-color: red;
+  color:white;
+  padding: 5px;
+  width:fit-content;
+  overflow-wrap: normal;
+  border-radius: 10px;
+  float: left;
+  margin: 2px;
+}
+#send-input{
+  width: 80%;
+  height: 100%;
+  background: #d9d9d9;
+  border-radius: 16px;  
+  color:black;
+ outline: none;
+ font-size: medium;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
